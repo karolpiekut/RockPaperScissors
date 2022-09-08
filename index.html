@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
     <title>RockPaperScissors</title>
-    <script src="js/scripts.js"></script>
     <style>
-    body {
+        body {
         text-align: center;
     }
 
@@ -17,7 +16,7 @@
         font-size: 20px;
     }
 
-    input {
+    button {
         width: 150px;
         height: 80px;
         font-size: 20px;
@@ -33,8 +32,7 @@
         gap: 30px;
     }
     </style>
-</header>
-
+</head>
 <body>
     <h1>Rock Paper Scissors - best of 5 wins!</h1>
     <h2 id="messageBanner">Make a choice to start the game!</h2>
@@ -52,14 +50,14 @@
     </div>
     <div class="buttons">
         <div>
-            <input class="selection" type="button" value="Rock" onClick="getUserChoice(this.value)">
-            <input class="selection" type="button" value="Paper" onClick="getUserChoice(this.value)">
-            <input class="selection" type="button" value="Scissors" onClick="getUserChoice(this.value)">
+            <button type="button" id="rock">Rock</button>
+            <button type="button" id="paper">Paper</button>
+            <button type="button" id="scissors">Scissors</button>
         </div>
         <div>
-        	<input type="button" value="Reset Game" onClick="getUserChoice(this.value)">
+            <<button type="button" id="resetGame">Reset Game</button>
         </div>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
-
 </html>

@@ -34,25 +34,32 @@ function compareVsUser(playerSelection, computerSelection) {
 
 }
 
-let userChoice = document.getElementById("Rock").value;
+let rock = document.querySelector("#rock");
+let paper = document.querySelector("#paper");
+let scissors = document.querySelector("#scissors");
 
-
-console.log(`User choice: ${userChoice}`);
-
-const messageBanner = document.getElementById("messageBanner");
-const gameCount = document.getElementById("gameCount");
-const userScore = document.getElementById("userScore");
-const computerScore = document.getElementById("computerScore");
-
+console.log(rock);
+console.log(paper);
+console.log(scissors);
 
 
 
+//console.log(`User choice: ${userChoice}`);
+
+//const messageBanner = document.querySelector("#messageBanner");
+//const gameCount = document.querySelector("#gameCount");
+//const userScore = document.querySelector("#userScore");
+//const computerScore = document.querySelector("#computerScore");
 
 
-//working progress
-//let userScore = 0;
-//let computerScore = 0;
-//let gameCount = 0;
+
+
+
+
+//work in progress
+let userScore = 0;
+let computerScore = 0;
+let gameCount = 0;
 
 let computerChoice = getComputerChoice();
 
