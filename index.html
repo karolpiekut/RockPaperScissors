@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>RockPaperScissors</title>
     <style>
         body {
-        text-align: center;
-    }
+            text-align: center;
+        }
 
-    .numbers {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        font-size: 20px;
-    }
+        .variables {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+        }
 
-    button {
-        width: 150px;
-        height: 80px;
-        font-size: 20px;
-        margin: 5px;
-    }
+        button {
+            width: 150px;
+            height: 80px;
+            font-size: 20px;
+            margin: 5px;
+        }
 
-    .buttons {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Rock Paper Scissors - best of 5 wins!</h1>
-    <h2 id="messageBanner">Make a choice to start the game!</h2>
-    <div class="numbers">
-        <p>Game Count:</p>
-        <div id="gameCount">0</div>
+<h1>Rock Paper Scissors - best of 5 wins!</h1>
+<h2 id="messageBanner">Make a choice to start the game!</h2>
+<div class="variables">
+    <p>Computer Choice:</p>
+    <div id="whatComputerPicked"></div>
+</div>
+<div class="variables">
+    <p>Game Count:</p>
+    <div id="gameCountLabel">0</div>
+</div>
+<div class="variables">
+    <p>User Score:</p>
+    <div id="userScoreLabel">0</div>
+</div>
+<div class="variables">
+    <p>Computer Score:</p>
+    <div id="computerScoreLabel">0</div>
+</div>
+<div class="buttons">
+    <div>
+        <button type="button" id="rock" onClick="userSelect('Rock')">Rock</button>
+        <button type="button" id="paper" onClick="userSelect('Paper')">Paper</button>
+        <button type="button" id="scissors" onClick="userSelect('Scissors')">Scissors</button>
     </div>
-    <div class="numbers">
-        <p>User Score:</p>
-        <div id="userScore">0</div>
+    <div>
+        <button type="button" id="resetGame" onClick="location.reload()">Reset Game</button>
     </div>
-    <div class="numbers">
-        <p>Computer Score:</p>
-        <div id="computerScore">0</div>
-    </div>
-    <div class="buttons">
-        <div>
-            <button type="button" id="rock">Rock</button>
-            <button type="button" id="paper">Paper</button>
-            <button type="button" id="scissors">Scissors</button>
-        </div>
-        <div>
-            <<button type="button" id="resetGame">Reset Game</button>
-        </div>
-    </div>
-    <script src="js/scripts.js"></script>
+</div>
+<script src="js/scripts.js"></script>
 </body>
+
 </html>
