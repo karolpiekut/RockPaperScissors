@@ -34,8 +34,7 @@
         }
 
         #messageBanner {
-            background: lightblue;
-            max-width:  30%;
+            background: lightblue;            max-width:  30%;
             margin-left:  auto;
             margin-right:  auto;
         }
@@ -43,35 +42,35 @@
 </head>
 
 <body>
-<h1>Rock Paper Scissors - best of 5 wins!</h1>
-<h2 id="messageBanner">Make a choice to start the game!</h2>
-<div class="variables">
-    <p>Computer Choice:</p>
-    <div id="whatComputerPicked"></div>
-</div>
-<div class="variables">
-    <p>Game Count:</p>
-    <div id="gameCountLabel">0</div>
-</div>
-<div class="variables">
-    <p>User Score:</p>
-    <div id="userScoreLabel">0</div>
-</div>
-<div class="variables">
-    <p>Computer Score:</p>
-    <div id="computerScoreLabel">0</div>
-</div>
-<div class="buttons">
-    <div>
-        <button type="button" id="rock" onClick="userSelect('Rock')">Rock</button>
-        <button type="button" id="paper" onClick="userSelect('Paper')">Paper</button>
-        <button type="button" id="scissors" onClick="userSelect('Scissors')">Scissors</button>
+    <h1>Rock Paper Scissors - best of 5 wins!</h1>
+    <h2 id="messageBanner">Make a choice to start the game!</h2>
+    <div class="variables">
+        <p>Computer Choice:</p>
+        <div id="whatComputerPicked"></div>
     </div>
-    <div>
-        <button type="button" id="resetGame" onClick="location.reload()">Reset Game</button>
+    <div class="variables">
+        <p>Game Count:</p>
+        <div id="gameCountLabel">0</div>
     </div>
-</div>
-<script src="js/scripts.js"></script>
+    <div class="variables">
+        <p>User Score:</p>
+        <div id="userScoreLabel">0</div>
+    </div>
+    <div class="variables">
+        <p>Computer Score:</p>
+        <div id="computerScoreLabel">0</div>
+    </div>
+    <div class="buttons">
+        <div>
+            <button type="button" id="rock" onClick="userSelect('Rock')">Rock</button>
+            <button type="button" id="paper" onClick="userSelect('Paper')">Paper</button>
+            <button type="button" id="scissors" onClick="userSelect('Scissors')">Scissors</button>
+        </div>
+        <div>
+            <button type="button" id="resetGame" onClick="location.reload()">Reset Game</button>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
