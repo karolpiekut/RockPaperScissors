@@ -24,7 +24,7 @@
             margin: 5px;
         }
 
-        .buttons {
+        .buttonsContainer {
             margin-top: 20px;
             display: flex;
             flex-direction: column;
@@ -34,11 +34,13 @@
         }
 
         #messageBanner {
-            background: lightblue;            max-width:  30%;
+            background: lightblue;            
+            max-width:  30%;
             margin-left:  auto;
             margin-right:  auto;
         }
     </style>
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -60,17 +62,16 @@
         <p>Computer Score:</p>
         <div id="computerScoreLabel">0</div>
     </div>
-    <div class="buttons">
+    <div class="buttonsContainer">
         <div>
-            <button type="button" id="rock" onClick="userSelect('Rock')">Rock</button>
-            <button type="button" id="paper" onClick="userSelect('Paper')">Paper</button>
-            <button type="button" id="scissors" onClick="userSelect('Scissors')">Scissors</button>
+            <button type="button" class="buttons" id="rock" value="Rock">Rock</button>
+            <button type="button" class="buttons" id="paper" value="Paper">Paper</button>
+            <button type="button" class="buttons" id="scissors" value="Scissors">Scissors</button>
         </div>
         <div>
-            <button type="button" id="resetGame" onClick="location.reload()">Reset Game</button>
+             <button type="button" id="resetGame" onClick="location.reload()">Reset Game</button>
         </div>
     </div>
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>

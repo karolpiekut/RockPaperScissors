@@ -7,3 +7,7 @@ Outstanding items:
 - create a fix where the game ends after the game count reaches 5 and not when a user selection button is pressed for the 6th time
 - replace buttons with images
 - make css pretty
+- add event listeners
+
+
+
